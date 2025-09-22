@@ -1,0 +1,13 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  background: linear-gradient(to right, #fecaca, #d1fae5); /* from-red-200 to-emerald-50 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

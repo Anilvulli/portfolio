@@ -1,0 +1,148 @@
+.about-section {
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #fecaca, #d1fae5);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.highlight {
+  color: #065f46;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.profile-image-wrapper {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 8px solid #9ca3af;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, border-color 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  border-color: #4b5563;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.profile-img:hover {
+  filter: grayscale(0%);
+}
+
+.about-text {
+  flex: 1;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.name-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.name-highlight {
+  color: #374151;
+}
+
+.institute {
+  color: #3b82f6;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.skills-highlight {
+  color: #10b981;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-item img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.skill-item span {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}

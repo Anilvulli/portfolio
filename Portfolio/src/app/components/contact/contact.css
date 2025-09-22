@@ -1,0 +1,77 @@
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 32px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #4B5563;
+  width: 100%;
+  max-width: 28rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form:hover {
+  border-color: #1F2937;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  color: #1f2937; /* Dark gray for good contrast */
+  background-color: #ffffff;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #6b7280; /* Soft gray placeholder */
+  font-size: 15px;
+}
+
+.input-field:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  border: 2px solid black;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  background-color: #3B82F6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3B82F6;
+  color: white;
+}

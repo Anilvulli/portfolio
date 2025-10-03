@@ -6,7 +6,7 @@
 
 .main-content {
   flex-grow: 1;
-  background: linear-gradient(to right, #fecaca, #d1fae5); /* from-red-200 to-emerald-50 */
+  background: linear-gradient(to right, #fecaca, #d1fae5); 
   display: flex;
   justify-content: center;
   align-items: center;
